@@ -4,7 +4,7 @@
   loop:
     - discord
     - spotify
-        
+
 - name: Install classic snap packages
   command: snap install "{{ item }}" --classic
   loop:

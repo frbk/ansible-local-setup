@@ -23,4 +23,4 @@
       - xz-utils 
       - tk-dev
       - ubuntu-restricted-extras
-      
+      - python-requests 

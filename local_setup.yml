@@ -4,3 +4,4 @@
     roles:
       - dependencies
       #- snaps
+      - dotfiles
