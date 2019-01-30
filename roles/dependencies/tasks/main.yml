@@ -1,0 +1,24 @@
+---
+- name: Install dependencies/packages
+  apt:
+    name: "{{ packages }}"
+  vars:
+    packages:
+      - build-essential
+      - cmake
+      - git
+      - openresolv
+      - openvpn
+      - zlib1g-dev
+      - libbz2-dev
+      - libpq-dev
+      - libssl-dev
+      - libreadline-dev 
+      - libsqlite3-dev 
+      - wget 
+      - curl 
+      - llvm 
+      - libncurses5-dev 
+      - libncursesw5-dev 
+      - xz-utils 
+      - tk-dev
