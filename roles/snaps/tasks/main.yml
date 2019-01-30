@@ -1,0 +1,13 @@
+---
+- name: Install snap packages
+  command: snap install "{{ item }}"
+  loop:
+    - discord
+    - spotify
+        
+- name: Install classic snap packages
+  command: snap install "{{ item }}" --classic
+  loop:
+    - slack
+    - sublime-text
+    - conjure-up

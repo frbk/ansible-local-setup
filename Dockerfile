@@ -1,6 +1,10 @@
 FROM ubuntu:16.04
 
-RUN apt-get update && apt-get install -y openssh-server sudo python unzip
+RUN apt update
+RUN apt install -y openssh-server sudo python unzip 
+# snapd fuse squashfuse
+# RUN systemctl enable snapd
+
 RUN mkdir /var/run/sshd
 RUN echo 'root:test' | chpasswd
 RUN sed -i 's/PermitRootLogin prohibit-password/PermitRootLogin yes/' /etc/ssh/sshd_config
@@ -13,4 +17,3 @@ RUN echo "export VISIBLE=now" >> /etc/profile
 
 EXPOSE 22
 CMD ["/usr/sbin/sshd", "-D"]
-

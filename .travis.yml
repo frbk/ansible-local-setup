@@ -11,3 +11,4 @@ before_install:
 
 script:
   - ansible-playbook -i env/local_docker local_setup.yml
+  

@@ -22,3 +22,5 @@
       - libncursesw5-dev 
       - xz-utils 
       - tk-dev
+      - ubuntu-restricted-extras
+      
