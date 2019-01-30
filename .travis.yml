@@ -5,12 +5,9 @@ install:
 services:
   - docker  
 
-jobs:
-  include:
-    - stage: build
-      script:
-        - docker build -t ansible-test .
-        - docker run -d -P --name ansible-test ansible-test
-    - stage: test
-      script:
-        - ansible-playbook -i env/local_docker local_setup.yml
+before_install:
+  - docker build -t ansible-test .
+  - docker run -d -P --name ansible-test ansible-test
+
+script:
+  - ansible-playbook -i env/local_docker local_setup.yml
