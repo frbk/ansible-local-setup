@@ -23,4 +23,5 @@
       - xz-utils 
       - tk-dev
       - ubuntu-restricted-extras
-      - python-requests 
+      - python-requests
+      - terminator 
