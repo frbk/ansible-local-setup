@@ -2,6 +2,6 @@
   - hosts: local
     become: true
     roles:
-      - dependencies
+      # - dependencies
       #- snaps
       - dotfiles

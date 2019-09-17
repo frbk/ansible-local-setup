@@ -1,14 +1,11 @@
 ---
-- name: Download dotfiles
-  git:
-    repo: https://github.com/frbk/dotfiles.git
-    dest: .dotfiles
 
-- name: Create symbolic links
-  file:
-    src: ".dotfiles/runcom/{{ item }}"
-    dest: "{{ item }}"
-    state: link
-  with_items:
-    - .bash_profile
-    - .bash_aliases
+- name: Clone dotfiles
+  become_user: fedor
+  git:
+    repo: 'git@github.com:frbk/dotfiles.git'
+    dest: /home/fedor/.dotfiles
+
+- name: Install dotfiles
+  become_user: fedor
+  command: /home/fedor/.dotfiles/install 
