@@ -9,4 +9,4 @@ before_install:
   - docker run -d -P --name ansible-test frbk/ansible-test
 
 script:
-  - ansible-playbook -i env/local_docker local_setup.yml
+  - ansible-playbook -i inventory/docker main.yml
