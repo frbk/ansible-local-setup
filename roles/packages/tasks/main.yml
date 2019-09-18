@@ -30,6 +30,12 @@
       - libffi-dev 
       - liblzma-dev
       - python-openssl
+      - htop
+      - gnome-shell-extension-caffeine
+      - openvpn-systemd-resolved
+      - network-manager-openvpn
+      - network-manager-openvpn-gnome
+      - dconf-editor
 
 - name: Install classic snaps
   snap:
