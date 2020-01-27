@@ -37,20 +37,20 @@
       - network-manager-openvpn-gnome
       - dconf-editor
 
-- name: Install classic snaps
-  snap:
-    name: "{{ snaps }}"
-    classic: yes
-  vars:
-    snaps:
-      - code
-      - slack
+# - name: Install classic snaps
+#   snap:
+#     name: "{{ snaps }}"
+#     classic: yes
+#   vars:
+#     snaps:
+#       - code
+#       - slack
 
-- name: Install snaps
-  snap:
-    name: "{{ snaps }}"
-    classic: yes
-  vars:
-    snaps:
-      - discord
-      - spotify  
+# - name: Install snaps
+#   snap:
+#     name: "{{ snaps }}"
+#     classic: yes
+#   vars:
+#     snaps:
+#       - discord
+#       - spotify  
