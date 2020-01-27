@@ -36,6 +36,7 @@
       - network-manager-openvpn
       - network-manager-openvpn-gnome
       - dconf-editor
+      - chrome-gnome-shell
 
 # - name: Install classic snaps
 #   snap:
